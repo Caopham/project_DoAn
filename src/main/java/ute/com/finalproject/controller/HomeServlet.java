@@ -12,12 +12,15 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String path= request.getPathInfo();
+        if(path==null)
+            ServletUtilis.forward("/View/vwHome/Index.jsp",request,response);
         switch (path)
         {
             case "/Index":
                 ServletUtilis.forward("/View/vwHome/Index.jsp",request,response);
                 break;
             case "/About":
+                ServletUtilis.forward("/View/vwHome/About.jsp",request,response);
                 break;
             default: break;
         }
