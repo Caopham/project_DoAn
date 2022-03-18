@@ -9,22 +9,18 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="card-columns">
+    <jsp:include page="../Partials/Navbar.jsp"></jsp:include>
+    <div class=" container-fluid mt-4">
+        <div class="row" >
+            <div class="col-sm-2">
+                <jsp:include page="../Partials/Left.jsp"></jsp:include>
+            </div>
+            <div class="col-sm-9 ">
                 <div class="card">
-                    <img class="card-img-top" src="holder.js/100x180/" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="holder.js/100x180/" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Text</p>
-                    </div>
+                    <div class="card-header">Index</div>
+                    <div class="card-body">abc</div>
+                    <div class="card-footer text-muted">Footer</div>
+
                 </div>
             </div>
         </div>
